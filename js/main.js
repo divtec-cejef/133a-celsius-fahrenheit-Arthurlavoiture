@@ -8,8 +8,19 @@
 
 'use strict'; // Demande un interprétation stricte du code
 
-let a = 'Bonjour';
+let temperatureEnCelcius = prompt('Temperature en Celcius');//
 
-console.log(a);
+let temperaturEnFahrenheit = temperatureEnCelcius * 9 / 5 + 32;
+
+temperatureEnCelcius = parseInt(temperatureEnCelcius);
+
+if (isNaN(temperatureEnCelcius)){
+    alert('veuillez saisire un nomre');
+} else {
+
+    alert(`${temperatureEnCelcius}°C = ${temperaturEnFahrenheit}°F`)
+
+}
+
 
 
