@@ -5,11 +5,22 @@
  * @since   2019-08-19
  */
 
-(function main() {
-  'use strict'; // Demande un interprétation stricte du code
 
-  let a = 'Bonjour';
+'use strict'; // Demande un interprétation stricte du code
 
-  console.log(a);
-}()); // Main IIFE
+let temperatureEnCelcius = prompt('Temperature en Celcius');//
+
+let temperaturEnFahrenheit = temperatureEnCelcius * 9 / 5 + 32;
+
+temperatureEnCelcius = parseInt(temperatureEnCelcius);
+
+if (isNaN(temperatureEnCelcius)){
+    alert('veuillez saisire un nomre');
+} else {
+
+    alert(`${temperatureEnCelcius}°C = ${temperaturEnFahrenheit}°F`)
+
+}
+
+
 
